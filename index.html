@@ -1,0 +1,1176 @@
+<body class="t-body" style="margin:0;">
+<div class="t123" ><div class="t-container_100 "><div class="t-width t-width_100 ">
+<script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+<div class="content">
+			<div class="row">
+				<div class="col col-3">
+					<label>Фамилия</label>
+					<input type="text" id="surname" value=""/>								
+				</div>
+				<div class="col col-3">
+					<label>Имя</label>
+					<input type="text" id="name" value=""/>							
+				</div>
+				<div class="col col-3">
+					<label>Отчество</label>
+					<input type="text" id="patronymic" value=""/>					
+				</div>				
+			</div>
+			<div class="row">
+				<div class="col col-3">
+					<label>Фамилия отца</label>
+					<input type="text" id="dad" value=""/>
+				</div>
+				<div class="col col-3">
+					<label>Девичья фамилия матери</label>
+					<input type="text" id="mama" value=""/>	
+				</div>								
+				<div class="col col-3">
+					<label>Дата рождения</label>
+					<input type="text" id="dd" value="" maxlength="2" placeholder="День"  oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"/>
+					<input type="text" id="dm" value="" maxlength="2" placeholder="Месяц" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"/>
+					<input type="text" id="dy" value="" maxlength="4" placeholder="Год" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');"/>
+				</div>					
+			</div>			
+			<div class="row">
+				<div class="col col-3">
+					<label></label>
+					<label class="l-radio">Мужчина : <input type="radio" id="m" name="pol" value="1" /></label>
+					<label class="l-radio">Женщина : <input type="radio" id="j" name="pol" value="2" checked/></label>
+				</div>
+				<div class="col col-3">
+				</div>		
+				<div class="col col-3">
+				</div>				
+			</div>
+			<div class="row">
+				<div class="col col-3">
+				</div>
+				<div class="col col-3">
+				</div>		
+				<div class="col col-3">
+					<div class="btn" id="send">Рассчитать</div>
+				</div>				
+			</div>			
+		</div>
+		<div class="content res" style="display:none;">
+			<div class="pic">
+				<div class="number-block num1">0</div>
+				<div class="number-block num2">0</div>
+				<div class="number-block num3">0</div>
+				<div class="number-block num4">0</div>
+				<div class="number-block num5">0</div>
+				<div class="number-block num6">0</div>
+				<div class="number-block num7">0</div>
+				<div class="number-block num8">0</div>
+				<div class="number-block num9">0</div>
+				<div class="number-block num10">0</div>
+				<div class="number-block num11">0</div>
+				<div class="number-block num12">0</div>
+				<div class="number-block num13">0</div>
+				<div class="number-block num14">0</div>
+				<div class="number-block num15">0</div>
+				<div class="number-block num16">0</div>
+				<div class="number-block num17">0</div>
+				<div class="number-block num18">0</div>
+				<div class="number-block num19">0</div>
+				<div class="number-block num20">0</div>
+				<div class="number-block num21">0</div>
+				<div class="number-block num22">0</div>
+				<div class="number-block num23">0</div>
+				<div class="number-block num24">0</div>
+				<div class="number-block num25">0</div>
+				<div class="number-block num26">0</div>			
+				<div class="qd"></div>
+				<div class="qd t45"></div>
+			</div>
+			
+			<div class="pr">
+				Предназначение <br>
+				<div class="chakr">
+					<span>Личное: </span><span class="pr_lich">0</span>
+				</div>
+				<div class="chakr">
+					<span>Социальное: </span><span class="pr_soc">0</span>
+				</div>
+				<div class="chakr">
+					<span>Духовное: </span><span class="pr_d">0</span>
+				</div>
+				<br>
+				<div class="chakr">
+					<span>Родовые задачи по мужской линии: </span><span><span class="rod m_rod_1">0</span><span class="rod m_rod_2">0</span><span class="rod m_rod_3">0</span></span>
+				</div>
+				<div class="chakr">
+					<span>Родовые задачи по женской линии: </span><span><span class="rod j_rod_1">0</span><span class="rod j_rod_2">0</span><span class="rod j_rod_3">0</span></span>
+				</div>
+				<br>
+				
+				<div class="chakr">
+					<span>1 чакра: </span><span><span class="rod chakr11">0</span><span class="rod chakr12">0</span><span class="rod chakr13">0</span></span>
+				</div>
+				<div class="chakr">
+					<span>2 чакра: </span><span><span class="rod chakr21">0</span><span class="rod chakr22">0</span><span class="rod chakr23">0</span></span>
+				</div>
+				<div class="chakr">			
+					<span>3 чакра: </span><span><span class="rod chakr31">0</span><span class="rod chakr32">0</span><span class="rod chakr33">0</span></span>
+				</div>
+				<div class="chakr">				
+					<span>4 чакра: </span><span>1 линия - <span class="rod chakr41">0</span><span class="rod chakr42">0</span><span class="rod chakr43">0</span><br>2 линия - <span class="rod chakr44">0</span><span class="rod chakr45">0</span><span class="rod chakr46">0</span></span>
+				</div>
+				<div class="chakr">			
+					<span>5 чакра: </span><span><span class="rod chakr51">0</span><span class="rod chakr52">0</span><span class="rod chakr53">0</span></span>
+				</div>
+				<div class="chakr">			
+					<span>6 чакра: </span><span><span class="rod chakr61">0</span><span class="rod chakr62">0</span><span class="rod chakr63">0</span></span>
+				</div>
+				<div class="chakr">			
+					<span>7 чакра: </span><span>1 линия - <span class="rod chakr71">0</span><span class="rod chakr72">0</span><span class="rod chakr73">0</span><br>2 линия - <span class="rod chakr74">0</span><span class="rod chakr75">0</span><span class="rod chakr76">0</span></span>			
+				</div>		
+		
+		</div>
+<script>
+$(document).ready(function(){
+var arr = new Array();
+
+arr['А'] = 1;
+arr['Б'] = 2;
+arr['В'] =3;
+arr['Г']=4;
+arr['Д']=5;
+arr['Е']=6;
+arr['Ё']=7;
+arr['Ж']=8;
+arr['З']=9;
+arr['И']=1;
+arr['Й']=2;
+arr['К']=3;
+arr['Л']=4;
+arr['М']=5;
+arr['Н']=6;
+arr['О']=7;
+arr['П']=8;
+arr['Р']=9;
+arr['С']=1;
+arr['Т']=2;
+				  arr['У']=3;
+				  arr['Ф']=4;
+				  arr['Х']=5;
+				  arr['Ц']=6;
+				  arr['Ч']=7;
+				  arr['Ш']=8;
+				  arr['Щ']=9;
+				  arr['Ъ']=1;
+				  arr['Ы']=2;
+				  arr['Ь']=3;
+				  arr['Э']=4;
+				  arr['Ю']=5;
+				  arr['Я']=6;
+				  arr['а']=1;
+				  arr['б']=2;
+				  arr['в']=3;
+				  arr['г']=4;
+				  arr['д']=5;
+				  arr['е']=6;
+				  arr['ё']=7;
+				  arr['ж']=8;
+				  arr['з']=9;
+				  arr['и']=1;
+				  arr['й']=2;
+				  arr['к']=3;
+				  arr['л']=4;
+				  arr['м']=5;
+				  arr['н']=6;
+				  arr['о']=7;
+				  arr['п']=8;
+				  arr['р']=9;
+				  arr['с']=1;
+				  arr['т']=2;
+				  arr['у']=3;
+				  arr['ф']=4;
+				  arr['х']=5;
+				  arr['ц']=6;
+				  arr['ч']=7;
+				  arr['ш']=8;
+				  arr['щ']=9;
+				  arr['ъ']=1;
+				  arr['ы']=2;
+				  arr['ь']=3;
+				  arr['э']=4;
+				  arr['ю']=5;
+				  arr['я']=6;
+				  arr['a']=1;
+				  arr['b']=2;
+				  arr['c']=3;
+				  arr['d']=4;
+				  arr['e']=5;
+				  arr['f']=6;
+				  arr['g']=7;
+				  arr['h']=8;
+				  arr['i']=9;
+				  arr['j']=1;
+				  arr['k']=2;
+				  arr['l']=3;
+				  arr['m']=4;
+				  arr['n']=5;
+				  arr['o']=6;
+				  arr['p']=7;
+				  arr['q']=8;
+				  arr['r']=9;
+				  arr['s']=1;
+				  arr['t']=2;
+				  arr['u']=3;
+				  arr['v']=4;
+				  arr['w']=5;
+				  arr['x']=6;
+				  arr['y']=7;
+				  arr['z']=8;
+				  arr['A']=1;
+				  arr['B']=2;
+				  arr['C']=3;
+				  arr['D']=4;
+				  arr['E']=5;
+				  arr['F']=6;
+				  arr['G']=7;
+				  arr['H']=8;
+				  arr['I']=9;
+				  arr['J']= 1;
+				  arr['K']=2;
+				  arr['L']=3;
+				  arr['M']=4;
+				  arr['N']=5;
+				  arr['O']=6;
+				  arr['P']=7;
+				  arr['Q']=8;
+				  arr['R']=9;
+				  arr['S']=1;
+				  arr['T']=2;
+				  arr['U']=3;
+				  arr['V']= 4;
+				  arr['W']= 5;
+				  arr['X']=6;
+				  arr['Y']= 7;
+				  arr['Z']=8;	
+				  
+
+				function calc_number(num){
+					var summ = 0;
+					if(parseInt(num) > 22){
+						var str = String(num);
+						for (var i = 0; i < str.length; i++) {	
+							summ = parseInt(summ) + parseInt(str[i]);	
+						}						
+						if(parseInt(summ) > 22){
+							summ = calc_number(String(summ));
+						}
+					}else{
+						summ = num;
+					}
+					return parseInt(summ);
+				}
+				function calc(str){
+					var summ = 0;
+					for (var i = 0; i < str.length; i++) {
+						if( str[i] != " " && str[i] != ""){
+							summ = summ + arr[str[i]];	
+						}
+					}
+					if(summ > 22){
+						summ =  calc_number(String(summ));
+					}
+					return parseInt(summ);
+				}
+				$("#send").click(function(){
+					var surname = $("#surname").val();					
+					var name = $("#name").val();	
+					var patronymic = $("#patronymic").val();	
+					var dad = $("#dad").val();	
+					var mama = $("#mama").val();	
+					var dd = $("#dd").val();	
+					var dm = $("#dm").val();	
+					var dy = $("#dy").val();	
+					var error = false;
+					if(surname == ""){
+						$("#surname").addClass("error");
+						error =true;
+					}else{
+						$("#surname").removeClass("error");
+					}
+					if(name == ""){
+						$("#name").addClass("error");
+						error =true;
+					}else{
+						$("#name").removeClass("error");
+					}					
+					if(patronymic == ""){
+						$("#patronymic").addClass("error");
+						error =true;
+					}else{
+						$("#patronymic").removeClass("error");
+					}
+					if(dad == ""){
+						$("#dad").addClass("error");
+						error =true;
+					}else{
+						$("#dad").removeClass("error");
+					}
+					if(mama == ""){
+						$("#mama").addClass("error");
+						error =true;
+					}else{
+						$("#mama").removeClass("error");
+					}
+					if(dd == ""){
+						$("#dd").addClass("error");
+						error =true;
+					}else{
+						$("#dd").removeClass("error");
+					}
+					if(dy == ""){
+						$("#dy").addClass("error");
+						error =true;
+					}else{
+						$("#dy").removeClass("error");
+					}					
+					if(dm == ""){
+						$("#dm").addClass("error");
+						error =true;
+					}else{
+						$("#dm").removeClass("error");
+					}						
+					
+					if( error == false){
+						var number1 = calc_number(dd);
+						var number2 = calc_number(dm);
+						var number3 = calc_number(dy);
+						var summ_for_num4 = parseInt(number1)+parseInt(number2)+parseInt(number3);
+						var number4 = calc_number(String(summ_for_num4));
+						var number5 = calc(surname);						
+						if( $("#m").is(':checked') ){
+							var number6 = calc(patronymic);
+						}else{
+							var number6 = calc(dad);
+						}
+						var number7 = calc(name);
+						var number8 = calc(mama);
+						var summ_for_num9 = parseInt(number1)+parseInt(number2)+parseInt(number3)+parseInt(number4);
+						var number9 = calc_number(summ_for_num9);
+								
+						var summ_for_num10 = parseInt(number5)+parseInt(number6)+parseInt(number7)+parseInt(number8);
+						var number10 = calc_number(summ_for_num10);
+
+						var summ_for_num11 = parseInt(number9)+parseInt(number5);
+						var number11 = calc_number(summ_for_num11);
+						
+						var summ_for_num12 = parseInt(number11)+parseInt(number5);
+						var number12 = calc_number(summ_for_num12);						
+						
+						var summ_for_num13 = parseInt(number9)+parseInt(number6);
+						var number13 = calc_number(summ_for_num13);							
+						
+
+						var summ_for_num14 = parseInt(number13)+parseInt(number6);
+						var number14 = calc_number(summ_for_num14);
+						
+						var summ_for_num15 = parseInt(number9)+parseInt(number7);
+						var number15 = calc_number(summ_for_num15);						
+						
+						var summ_for_num16 = parseInt(number15)+parseInt(number7);
+						var number16 = calc_number(summ_for_num16);						
+
+						var summ_for_num17 = parseInt(number9)+parseInt(number8);
+						var number17 = calc_number(summ_for_num17);	
+						
+						var summ_for_num18 = parseInt(number17)+parseInt(number8);
+						var number18 = calc_number(summ_for_num18);							
+
+						var summ_for_num19 = parseInt(number9)+parseInt(number1);
+						var number19 = calc_number(summ_for_num19);	
+	
+						var summ_for_num20 = parseInt(number19)+parseInt(number1);
+						var number20 = calc_number(summ_for_num20);
+						
+						var summ_for_num21 = parseInt(number9)+parseInt(number3);
+						var number21 = calc_number(summ_for_num21);
+						
+						var summ_for_num22 = parseInt(number21)+parseInt(number3);
+						var number22 = calc_number(summ_for_num22);
+						
+						var summ_for_num23 = parseInt(number9)+parseInt(number2);
+						var number23 = calc_number(summ_for_num23);
+
+
+						var summ_for_num24 = parseInt(number23)+parseInt(number2);
+						var number24 = calc_number(summ_for_num24);
+
+						var summ_for_num25 = parseInt(number9)+parseInt(number4);
+						var number25 = calc_number(summ_for_num25);
+
+						var summ_for_num26 = parseInt(number25)+parseInt(number4);
+						var number26 = calc_number(summ_for_num26);						
+						
+						
+						var m_rod_num =  parseInt(number5)+parseInt(number6);
+						var m_rod_1   = calc_number(number5);
+						var m_rod_2   = calc_number(number6);
+						var m_rod_3   = calc_number(m_rod_num);
+
+						var j_rod_num = parseInt(number7)+parseInt(number8);
+						var j_rod_1 = calc_number(number7);
+						var j_rod_2 = calc_number(number8);
+						var j_rod_3 = calc_number(j_rod_num);
+											
+						var pr_lich_num  = calc_number(calc_number( parseInt(number2)+parseInt(number4) ) + calc_number( parseInt(number1)+parseInt(number3) ));
+						var pr_lich = calc_number(pr_lich_num);		
+						
+						var pr_soc_num  = calc_number(calc_number( parseInt(number5)+parseInt(number6) ) + calc_number( parseInt(number7)+parseInt(number8) ));
+						var pr_soc = calc_number(pr_soc_num);							
+						
+						var pr_d_num  = parseInt(pr_lich)+parseInt(pr_soc) ;
+						var pr_d = calc_number(pr_d_num);	
+						
+
+
+						var chakr13 =  calc_number(parseInt(number4)+parseInt(number3));
+						var chakr11 =  calc_number(parseInt(number4));
+						var chakr12 =  calc_number(parseInt(number3));						
+						var chakr21 =  calc_number(parseInt(number26));
+						var chakr22 =  calc_number(parseInt(number22));
+						var chakr23 =  calc_number(parseInt(number26)+parseInt(number22));						
+						var chakr31 =  calc_number(parseInt(number25));
+						var chakr32 =  calc_number(parseInt(number21));
+						var chakr33 =  calc_number(parseInt(number25)+parseInt(number21));
+						
+						var chakr41 = calc_number(parseInt(number9));
+						var chakr42 = calc_number(parseInt(number10));
+						var chakr43 = calc_number(parseInt(number9)+parseInt(number10));
+						var chakr44 = calc_number(parseInt(number5));
+						var chakr45 = calc_number(parseInt(number6));
+						var chakr46 = calc_number(parseInt(number5)+parseInt(number6));						
+						var chakr51 = calc_number(parseInt(number7));
+						var chakr52 = calc_number(parseInt(number8));
+						var chakr53 = calc_number(parseInt(number7)+parseInt(number8));						
+						var chakr61 = calc_number(parseInt(number23));
+						var chakr62 = calc_number(parseInt(number19));
+						var chakr63 = calc_number(parseInt(number23)+parseInt(number19));
+						
+						
+						var chakr71 =  calc_number(parseInt(number24));
+						var chakr72 =  calc_number(parseInt(number20));
+						var chakr73 =  calc_number(parseInt(number24)+parseInt(number20));
+						var chakr74 =  calc_number(parseInt(number2));
+						var chakr75 =  calc_number(parseInt(number1));
+						var chakr76 =  calc_number(parseInt(number2)+parseInt(number1));
+
+						$(".chakr11").text(chakr11);
+						$(".chakr12").text(chakr12);
+						$(".chakr13").text(chakr13);						
+						$(".chakr21").text(chakr21);
+						$(".chakr22").text(chakr22);
+						$(".chakr23").text(chakr23);						
+						$(".chakr31").text(chakr31);
+						$(".chakr32").text(chakr32);
+						$(".chakr33").text(chakr33);
+						$(".chakr41").text(chakr41);
+						$(".chakr42").text(chakr42);
+						$(".chakr43").text(chakr43);
+						$(".chakr44").text(chakr44);
+						$(".chakr45").text(chakr45);
+						$(".chakr46").text(chakr46);												
+						$(".chakr51").text(chakr51);
+						$(".chakr52").text(chakr52);
+						$(".chakr53").text(chakr53);	
+						$(".chakr61").text(chakr61);
+						$(".chakr62").text(chakr62);
+						$(".chakr63").text(chakr63);
+						$(".chakr71").text(chakr71);		
+						$(".chakr72").text(chakr72);
+						$(".chakr73").text(chakr73);
+						$(".chakr74").text(chakr74);
+						$(".chakr75").text(chakr75);
+						$(".chakr76").text(chakr76);
+						$(".m_rod_1").text(m_rod_1);
+						$(".m_rod_2").text(m_rod_2);
+						$(".m_rod_3").text(m_rod_3)					
+						$(".j_rod_1").text(j_rod_1);
+						$(".j_rod_2").text(j_rod_2);
+						$(".j_rod_3").text(j_rod_3);						
+						$(".pr_lich").text(pr_lich);						
+						$(".pr_soc").text(pr_soc);
+						$(".pr_d").text(pr_d);						
+						$(".num1").text(number1);
+						$(".num2").text(number2);
+						$(".num3").text(number3);
+						$(".num4").text(number4);
+						$(".num5").text(number5);
+						$(".num6").text(number6);
+						$(".num7").text(number7);
+						$(".num8").text(number8);
+						$(".num9").text(number9+'/'+number10);
+						$(".num11").text(number11);
+						$(".num12").text(number12);
+						$(".num13").text(number13);
+						$(".num14").text(number14);
+						$(".num15").text(number15);
+						$(".num16").text(number16);
+						$(".num17").text(number17);
+						$(".num18").text(number18);
+						$(".num19").text(number19);
+						$(".num20").text(number20);
+						$(".num21").text(number21);
+						$(".num22").text(number22);
+						$(".num23").text(number23);
+						$(".num24").text(number24);
+						$(".num25").text(number25);						
+						$(".num26").text(number26);						
+						
+						$(".content.res").show();
+						
+					}
+					
+					
+		
+									
+					
+					
+					
+					
+					
+				});
+			});
+
+</script>		
+		
+		
+ 
+</div> </div></div></div></div>
+
+<style>
+html,body{
+	width:100%;
+	height:100%;
+	min-height:100vh;
+	position:relative;
+	margin:0px;
+	padding:0px;
+	color: #404040;
+	font-family: 'Arial';
+}
+
+body{
+background: rgba(244,229,255);
+}
+div.content{
+	width:750px;
+	height:auto;
+	border:none;
+	border-radius:none;
+	padding:10px;
+	position:relative;
+	left:50%;
+	margin-left:-320px;
+	margin-top:50px;
+	box-sizing: border-box;
+	
+}
+div.row{
+	display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+	margin-bottom:15px;
+}
+div.col-3{
+	    width: 33%;
+		position: relative;
+}
+label{
+	display: block;
+}
+.l-radio{
+	display: inline-block;
+	margin-right:15px;
+}
+div.col input[type='text']{
+	    width: 100%;
+		position: relative;
+		display:block;
+		border:1px solid #CCC;
+		border-radius:none;	
+		padding:10px 5px;		
+		box-sizing: border-box;
+}
+#dm{
+	display: inline-block;
+    width: 73px;
+    text-align: center;	
+}
+#dy{
+	display: inline-block;
+    width: 99px;
+    text-align: center;	
+}
+#dd{
+	display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+div.col input[type='text'].error{
+	border:2px solid #723FBA;
+}
+.btn{
+	background:#A7D7B4;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: none;
+    cursor: pointer;	
+}
+.btn:hover{
+	background: #C3E4CC;
+}
+
+div.content.res{
+	display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+}
+
+.pic{
+	position:relative;
+	width:300px;
+	height:300px;
+	box-sizing: border-box;
+	margin: 80px;
+	margin-bottom: 130px;
+}
+
+.qd{
+	content:"";
+	width:100%;
+	height:100%;
+	border:4px solid #ccc;
+	position:absolute;
+	box-sizing: border-box;
+}
+.qd::before{
+	content:"";
+	width:142%;
+	height:4px;
+	position:absolute;
+	left:-60px;
+	top:50%;
+	margin-top:-2px;
+	background:#ccc;
+	
+}
+.qd::after{
+	content:"";
+	width:4px;
+	height:142%;
+	
+	position:absolute;
+	left:50%;
+	top:-60px;
+	margin-left:-2px;
+	background:#ccc;
+	
+}
+.qd.t45{
+	-moz-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg); 
+    transform: rotate(45deg);
+}
+
+.number-block{
+	position:absolute;
+	font-size:18px;
+	font-weight:bold;
+	line-height:26px;
+	text-align:center;
+	color:#000;
+	background:#ccc;
+	width:26px;
+	height:26px;
+	border-radius:26px;
+	z-index: 10;
+-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);	
+}
+.num1{
+	left: -73px;
+    top: 50%;
+    margin-top: -13px;   
+}
+.num2{
+	top: -73px;
+    left: 50%;
+    margin-left: -13px;   
+}
+
+.num3{
+	right: -73px;
+    top: 50%;
+    margin-top: -13px;   
+}
+.num4{
+	bottom: -73px;
+    left: 50%;
+    margin-left: -13px;   
+}
+
+.num5{
+	top:-13px;
+    left: -13px;
+  
+}
+.num6{
+	bottom:-13px;
+    right: -13px;
+  
+}
+.num7{
+	top:-13px;
+    right: -13px;
+  
+}
+.num8{
+	bottom:-13px;
+    left: -13px;
+  
+}
+.num9{
+	top:50%;
+	left:50%;
+	width:60px; 
+}
+.num10{
+	display:none;
+}
+.num11{
+	left: 32px;
+    top: 32px;
+}
+.num12{
+	left: 10px;
+    top: 10px;
+}
+.num13{
+	right: 32px;
+    bottom: 32px;
+}
+.num14{
+	right: 10px;
+    bottom: 10px;
+}
+.num15{
+	right: 32px;
+   top: 32px;
+}
+.num16{
+	right: 10px;
+    top: 10px;
+}
+
+.num17{
+	left: 32px;
+   bottom: 32px;
+}
+.num18{
+	left: 10px;
+    bottom: 10px;
+}
+
+.num19{
+    left: -13px;
+    top: 50%;
+    margin-top: -13px;
+}
+.num20{
+    top: 50%;
+    margin-top: -13px;
+	left: -43px;
+}
+
+.num21{
+    right: -13px;
+    top: 50%;
+    margin-top: -13px;
+}
+.num22{
+    top: 50%;
+    margin-top: -13px;
+	right: -43px;
+}
+
+.num23{
+    left:50%;
+    top: -13px;
+    margin-left: -13px;
+}
+.num24{
+    left:50%;
+    top: -43px;
+    margin-left: -13px;
+}
+
+.num25{
+    left:50%;
+    bottom: -13px;
+    margin-left: -13px;
+}
+.num26{
+    left:50%;
+    bottom: -43px;
+    margin-left: -13px;
+}
+
+.pr span{
+	    font-weight: 600;
+}
+.rod{margin-right: 5px;
+    padding-right: 0px !important;}
+
+
+.text{
+    font-size: 14px;
+    z-index: 200;
+    position: absolute;
+    text-align: center;	
+}
+.text.t1{
+    left: -80px;
+    top: 80px;	
+}
+.text.t2{
+	right: -80px;
+    top: 96px;
+}
+.text.t3{
+    left: 102px;
+    bottom: -115px;	
+}  
+
+@media (max-width: 710px) {
+	*{    font-size: 16px;}
+	div.content{
+		width:auto;
+		margin:25px;	
+		left:0px;
+	}
+	div.row {
+		display: block;
+		position: relative;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.text{
+		font-size: 12px;
+		z-index: 200;
+		position: absolute;
+		text-align: center;	
+	}
+	div.col-3 {
+		width: 100%;
+		position: relative;
+		
+		margin-bottom: 20px;
+	}	
+	div.content.res {
+		display: block;
+		flex-direction: row;
+		justify-content: space-between;
+		text-align:center;
+	}
+	.text.t1 {
+		left: -70px;
+		top: 38px;
+	}
+	.text.t2 {
+		right: -70px;
+		top: 53px;
+	}
+	.text.t3 {
+		left: 56px;
+		bottom: -111px;
+	}
+	.pic {
+		position: relative;
+		width: 200px;
+		height: 200px;
+		box-sizing: border-box;
+		margin: 80px auto;
+	}
+	.pr{margin-top:120px;}
+	.number-block {
+		position: absolute;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 18px;
+		text-align: center;
+		color: #000;
+		background: #ccc;
+		width: 20px;
+		height: 20px;
+		border-radius: 20px;
+		z-index: 10;
+		-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+		box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	}
+	.num9 {
+		top: 50%;
+		left: 50%;
+		width: 60px;
+	}
+}
+@media (max-width: 500px) {
+	*{    font-size: 16px;}
+	div.content{
+		width:auto;
+		margin:25px;	
+		left:0px;
+	}
+	div.row {
+		display: block;
+		position: relative;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.text{
+		font-size: 12px;
+		z-index: 200;
+		position: absolute;
+		text-align: center;	
+	}
+	div.col-3 {
+		width: 100%;
+		position: relative;
+		
+		margin-bottom: 20px;
+	}	
+	div.content.res {
+		display: block;
+		flex-direction: row;
+		justify-content: space-between;
+		text-align:center;
+	}
+	.text.t1 {
+left: -60px;
+    top: 18px;
+	}
+	.text.t2 {
+right: -56px;
+    top: 31px;
+	}
+	.text.t3 {
+left: 34px;
+    bottom: -78px;
+	}
+	.pic {
+		position: relative;
+		width: 150px;
+		height: 150px;
+		box-sizing: border-box;
+		margin: 80px auto;
+	}
+	.pr{margin-top:120px;}
+	.number-block {
+		position: absolute;
+		font-size: 12px;
+		font-weight: normal;
+		line-height: 15px;
+		text-align: center;
+		color: #000;
+		background: #ccc;
+		width: 16px;
+		height: 16px;
+		border-radius: 16px;
+		z-index: 10;
+		-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+		box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+	}
+	
+	.num1{
+		left: -43px;
+		top: 50%;
+		margin-top: -9px;   
+	}
+	.num2{
+		top: -43px;
+		left: 50%;
+		margin-left: -9px;  
+	}
+
+	.num3{
+		right: -43px;
+		top: 50%;
+		margin-top: -9px;   
+	}
+	.num4{
+		bottom: -43px;
+		left: 50%;
+		margin-left: -9px;   
+	}
+
+	.num5{
+		top:-13px;
+		left: -13px;
+	  
+	}
+	.num6{
+		bottom:-13px;
+		right: -13px;
+	  
+	}
+	.num7{
+		top:-13px;
+		right: -13px;
+	  
+	}
+	.num8{
+		bottom:-13px;
+		left: -13px;
+	  
+	}
+	.num9{
+		top:50%;
+		left:50%;
+		width:40px; 
+	}
+	.num10{
+		display:none;
+	}
+	.num11{
+		left: 16px;
+		top: 16px;
+	}
+	.num12{
+		left: 3px;
+		top: 3px;
+	}
+	.num13{
+		right: 16px;
+		bottom: 16px;
+	}
+	.num14{
+		right: 3px;
+		bottom: 3px;
+	}
+	.num15{
+		right: 16px;
+	   top: 16px;
+	}
+	.num16{
+		right: 3px;
+		top: 3px;
+	}
+
+	.num17{
+		left: 16px;
+	   bottom: 16px;
+	}
+	.num18{
+		left: 3px;
+		bottom: 3px;
+	}
+
+	.num19{
+		left: -5px;
+		top: 50%;
+		margin-top: -9px;
+	}
+	.num20{
+	top: 50%;
+    margin-top: -9px;
+    left: -24px;
+	}
+
+	.num21{
+    right: -6px;
+    top: 50%;
+    margin-top: -9px;
+	}
+	.num22{
+    top: 50%;
+    margin-top: -9px;
+    right: -24px;
+	}
+
+	.num23{
+		left: 50%;
+		top: -6px;
+		margin-left: -8px;
+	}
+	.num24{
+		left: 50%;
+		top: -24px;
+		margin-left: -9px;
+	}
+
+	.num25{
+	left: 50%;
+    bottom: -6px;
+    margin-left: -9px;
+	}
+	.num26{
+	left: 50%;
+    bottom: -24px;
+    margin-left: -9px;
+	}	
+
+.qd::before {
+    content: "";
+    width: 142%;
+    height: 2px;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    margin-top: -1px;
+    background: #ccc;
+}
+.qd {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ccc;
+    position: absolute;
+    box-sizing: border-box;
+}
+.pic {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    margin: 80px auto;
+}
+.qd::after {
+    content: "";
+    width: 2px;
+    height: 142%;
+    position: absolute;
+    left: 50%;
+    top: -32px;
+    margin-left: -1px;
+    background: #ccc;
+}	
+	
+	
+}
+.chakr span:first-child{
+padding-right: 15px;
+}
+.chakr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    line-height: 25px;
+}
+
+</style>
